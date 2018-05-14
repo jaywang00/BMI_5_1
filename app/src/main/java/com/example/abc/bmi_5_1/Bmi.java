@@ -55,9 +55,13 @@ public class Bmi extends AppCompatActivity implements View.OnClickListener {
 //        else
 //            suggest.setText(R.string.advice_average);
 
+// add the new java => new activity => Empty activity: name: Report and activity_report.xml
+// Edit the Bmi as the following (the "Report" is below the "Bmi" in java)
+//                                     the java "Report" is link to res\layout\activity_report
+// add this for start Page 2,
         Intent intent = new Intent();
         intent.setClass(Bmi.this, Report.class);
         startActivity(intent);
-
+// add this for start Page 2
     }
 }
